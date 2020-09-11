@@ -1,7 +1,7 @@
 #content-desktop {display: block;}
 #content-mobile {display: none;}
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 600px) {
 
     #content-desktop {display: none;}
     #content-mobile {display: block;}
@@ -53,7 +53,8 @@
 @media screen and (max-width: 800px) {
     .index-wrapper1{
         background-image: url('');
-        grid-template-columns: 100%
+        grid-template-columns: 100%;
+        grid-template-rows: 600px;
     }
     .index-wrapper1 .para1{
         h1{

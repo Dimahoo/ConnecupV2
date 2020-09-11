@@ -24,7 +24,7 @@
  }
 
  .cadre .neo-button {
-  margin-top: 80%;
+  margin-top: 600px;
 }
 
 .cadre .neo-button > a {
@@ -63,7 +63,7 @@
   }
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 650px) {
   .cadre{
     background: rgba(0,0,100,0.7);
     height: 100vh;
@@ -74,7 +74,7 @@
     right: 0;
     bottom: 20%;
     width: 100%;
-    height: 60%;
+    height: 50%;
   }
 
   .cadre .welcome-msg{
@@ -88,8 +88,15 @@
       font-size: 35px;
     }
   }
+
   .cadre .neo-button {
     margin-top: 110%;
+  }
+
+  @media screen and (min-height: 800px) {
+    .cadre .neo-button {
+      margin-top: 130%;
+    }
   }
 
   .cadre .neo-button > a {
@@ -106,6 +113,28 @@
   .cadre .welcome-msg{
     h1{
       font-size: 25px;
+    }
+  }
+
+  .cadre .neo-button {
+    margin-top: 110%;
+  }
+
+  @media screen and (min-height: 600px) {
+    .cadre .neo-button {
+      margin-top: 120%;
+    }
+  }
+
+  @media screen and (min-height: 800px) {
+    .cadre .neo-button {
+      margin-top: 150%;
+    }
+  }
+
+  @media screen and (min-height: 500px) {
+    .cadre .neo-button {
+      margin-top: 150%;
     }
   }
 }
