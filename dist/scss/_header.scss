@@ -58,13 +58,13 @@
       margin-top: initial;
     }
   }
-
+  /*TBD*/
   @media screen and (min-width: 767px) {
     .nav-links .nav-link:hover .collabse-nav-link {
       display: block;
     }
   }
-  
+  /*phones*/
   @media screen and (max-width: 767px) {
 
     .nav-links .arrow {
@@ -190,10 +190,19 @@
     }
   }
 }
-
+/*Ipad pro */
 @media screen and (max-width: 1024px) {
   .main-header {
     padding: 0 5vw 0 3vw;
+    .nav-link {
+      font-size: 12px;
+    }
+  }
+}
+/*Ipad*/
+@media screen and (max-width: 768px) {
+  .main-header {
+    padding: 0 3vw;
     .nav-link {
       font-size: 12px;
     }

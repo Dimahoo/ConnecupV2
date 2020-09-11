@@ -350,6 +350,8 @@
   z-index: 10;
   -webkit-transition: .4s ease-out;
   transition: .4s ease-out;
+  /*TBD*/
+  /*phones*/
 }
 
 .main-header a {
@@ -549,9 +551,20 @@
   background: #fff;
 }
 
+/*Ipad pro */
 @media screen and (max-width: 1024px) {
   .main-header {
     padding: 0 5vw 0 3vw;
+  }
+  .main-header .nav-link {
+    font-size: 12px;
+  }
+}
+
+/*Ipad*/
+@media screen and (max-width: 768px) {
+  .main-header {
+    padding: 0 3vw;
   }
   .main-header .nav-link {
     font-size: 12px;
@@ -1322,12 +1335,6 @@
 }
 
 @media screen and (max-width: 400px) and (min-height: 800px) {
-  .cadre .neo-button {
-    margin-top: 150%;
-  }
-}
-
-@media screen and (max-width: 400px) and (min-height: 500px) {
   .cadre .neo-button {
     margin-top: 150%;
   }
