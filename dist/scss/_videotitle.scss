@@ -1,0 +1,111 @@
+
+ .cadre{
+  background: rgba(0,0,100,0.7);
+  height: 100vh;
+  width: 50%;
+ }
+
+ .cadre .video-background{
+   position: absolute;
+   right: 0;
+   bottom: 0;
+   width: 100%;
+   height: 100%;
+   z-index: -1;
+ }
+
+ .cadre .welcome-msg{
+   position: relative;
+   text-align: left;
+   margin-left: 10%;
+   margin-right: 10%;
+   color: #ffffff;
+   top: 40%;
+ }
+
+ .cadre .neo-button {
+  margin-top: 80%;
+}
+
+.cadre .neo-button > a {
+  color: #ffffff;
+  background-color: #2B3990;
+  padding: 15px 30px;
+}
+
+.cadre .neo-button > a span:nth-child(1){
+  background: linear-gradient(90deg,transparent,#ffffff);
+}
+
+.cadre .neo-button > a span:nth-child(2){
+  background: linear-gradient(180deg,transparent,#ffffff);
+}
+
+.cadre .neo-button > a span:nth-child(3){
+  background: linear-gradient(270deg,transparent,#ffffff);
+}
+
+.cadre .neo-button > a span:nth-child(4){
+  background: linear-gradient(360deg,transparent,#ffffff);
+}
+
+ @media (min-aspect-ratio:16/9){
+   .cadre .video-background{
+     width: 100%;
+     height: auto;
+   }
+ }
+
+ @media (max-aspect-ratio:16/9){
+  .cadre .video-background{
+    width: auto;
+    height: 100%;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .cadre{
+    background: rgba(0,0,100,0.7);
+    height: 100vh;
+    width: 100%;
+   }
+
+  .cadre .video-background{
+    right: 0;
+    bottom: 20%;
+    width: 100%;
+    height: 60%;
+  }
+
+  .cadre .welcome-msg{
+    position: relative;
+    text-align: left;
+    margin-left: 5%;
+    margin-right: 5%;
+    color: #ffffff;
+    top: 15%;
+    h1{
+      font-size: 35px;
+    }
+  }
+  .cadre .neo-button {
+    margin-top: 110%;
+  }
+
+  .cadre .neo-button > a {
+    color: #ffffff;
+    background-color: #2B3990;
+    padding: 15px 30px;
+  }
+
+
+
+}
+
+@media screen and (max-width: 400px) {
+  .cadre .welcome-msg{
+    h1{
+      font-size: 25px;
+    }
+  }
+}

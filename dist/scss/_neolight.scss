@@ -1,0 +1,125 @@
+/*Neo Light Button*/
+.neo-button > a {
+    position: relative;
+    display: inline;
+    text-align: center;
+    padding: 15px 30px;
+    color: #2B3990;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    text-decoration: none;
+    font-size: 20px;
+    overflow: hidden;
+    transition: 0.2s;
+}
+.neo-button{
+    margin: 0;
+    padding:0;
+    display: flex;
+    justify-content: center;
+}
+
+.neo-button > a:hover {
+    color:white;
+    background: #2B3990;
+    /*box-shadow: 0 0 4px rgb(28, 10, 77), 0 0 34px rgb(28, 10, 77), 0 0 74px rgb(28, 10, 77);*/
+    transition-delay: 0.25s;
+}
+
+.neo-button > a span{
+    position:absolute;
+    display: block;
+}
+
+.neo-button > a span:nth-child(1){
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg,transparent,#2B3990);
+    animation: animate1 1s linear infinite;
+}
+@keyframes animate1
+{
+    0%{
+        left: -100%;
+    }
+    50%, 100%{
+        left: 100%;
+    }
+}
+
+.neo-button > a span:nth-child(2){
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg,transparent,#2B3990);
+    animation: animate2 1s linear infinite;
+    animation-delay: 0.25s;
+}
+@keyframes animate2
+{
+    0%{
+        top: -100%;
+    }
+    50%, 100%{
+        top: 100%;
+    }
+}
+
+.neo-button > a span:nth-child(3){
+    bottom: 0;
+    right: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg,transparent,#2B3990);
+    animation: animate3 1s linear infinite;
+    animation-delay: 0.5s;
+}
+@keyframes animate3
+{
+    0%{
+        right: -100%;
+    }
+    50%, 100%{
+        right: 100%;
+    }
+}
+
+.neo-button > a span:nth-child(4){
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg,transparent,#2B3990);
+    animation: animate4 1s linear infinite;
+    animation-delay: 0.75s;
+}
+@keyframes animate4
+{
+    0%{
+        bottom: -100%;
+    }
+    50%, 100%{
+        bottom: 100%;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .neo-button > a {
+        position: relative;
+        display: inline;
+        text-align: center;
+        padding: 15px 30px;
+        color: #2B3990;
+        text-transform: uppercase;
+        letter-spacing: 4px;
+        text-decoration: none;
+        font-size: 10px;
+        font-weight: bold;
+        overflow: hidden;
+        transition: 0.2s;
+    }
+}
+/*End Neo Light Button*/
