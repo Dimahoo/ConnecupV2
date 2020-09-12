@@ -43,19 +43,33 @@
     
 }
 
+@media screen and (max-width: 1024px) {
+    .index-wrapper1{
+        grid-template-rows: 800px;
+    }
+}
+
 @media screen and (max-width: 800px) {
     .index-wrapper1{
-        background-image: url('');
-        grid-template-columns: 100%;
-        grid-template-rows: 600px;
+        grid-template-rows: 500px;
     }
     .index-wrapper1 .para1{
         h1{
-            text-align: left;
             font-size: 30px;
         }
         p{
             font-size: 15px;
         }
+    }
+    .pages {
+        font-size: 10px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .index-wrapper1{
+        background-image: url('');
+        grid-template-columns: 100%;
+        grid-template-rows: 550px;
     }
 }

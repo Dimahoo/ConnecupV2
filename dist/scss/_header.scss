@@ -193,18 +193,27 @@
 /*Ipad pro */
 @media screen and (max-width: 1024px) {
   .main-header {
-    padding: 0 5vw 0 3vw;
+    padding: 0 3vw 0 3vw;
     .nav-link {
-      font-size: 12px;
+      font-size: 17px;
     }
   }
 }
 /*Ipad*/
+@media screen and (max-width: 800px) {
+  .main-header {
+    padding: 0 1vw;
+    .nav-link {
+      font-size: 13px;
+    }
+  }
+}
+/*Phones*/
 @media screen and (max-width: 766px) {
   .main-header {
     padding: 0 3vw;
     .nav-link {
-      font-size: 12px;
+      font-size: 24px;
     }
   }
 }

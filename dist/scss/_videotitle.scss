@@ -104,9 +104,6 @@
     background-color: #2B3990;
     padding: 15px 30px;
   }
-
-
-
 }
 
 @media screen and (max-width: 400px) {
@@ -131,6 +128,11 @@
       margin-top: 150%;
     }
   }
-
-
 }
+
+@media screen and (max-width: 300px) {
+  .cadre .neo-button {
+    margin-top: 150%;
+  }
+}
+
