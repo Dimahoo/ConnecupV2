@@ -644,7 +644,7 @@
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    padding: 8rem 0;
+    padding: 3rem 0;
     width: 100vw;
     height: 100vh;
     font-size: 2rem;
@@ -1363,6 +1363,12 @@
   }
 }
 
+@media screen and (max-height: 800px) and (min-width: 800px) {
+  .cadre .neo-button {
+    margin-top: 60%;
+  }
+}
+
 *, *::before, *::after {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -1383,4 +1389,3 @@ body {
 .container p {
   margin: 1rem 0;
 }
-/*# sourceMappingURL=index.css.map */

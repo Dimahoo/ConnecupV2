@@ -644,7 +644,7 @@
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    padding: 8rem 0;
+    padding: 3rem 0;
     width: 100vw;
     height: 100vh;
     font-size: 2rem;
@@ -1065,4 +1065,3 @@ body {
 .container p {
   margin: 1rem 0;
 }
-/*# sourceMappingURL=about.css.map */
