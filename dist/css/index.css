@@ -520,10 +520,12 @@
   background-attachment: fixed;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 50% 50%;
-      grid-template-columns: 50% 50%;
-  -ms-grid-rows: 700px;
-      grid-template-rows: 700px;
+  -ms-grid-columns: (minmax(315px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(315px, 1fr));
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  justify-items: center;
 }
 
 .index-wrapper1 .para1 h1 {
@@ -665,6 +667,88 @@
     width: 200px;
     height: 180px;
     margin-bottom: 10%;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .about-wrapper2 .para1 h1 {
+    margin-left: 2%;
+    margin-right: 2%;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .about-wrapper1 {
+    background: #2B3990;
+    height: 60px;
+  }
+  .about-wrapper2 .para1 h1 {
+    font-size: 40px;
+  }
+  .about-wrapper2 .para2 .team {
+    width: 220px;
+    height: 200px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .about-wrapper2 .para2 .team {
+    width: 180px;
+    height: 150px;
+  }
+}
+
+/* about-wrapper4*/
+.about-wrapper3 h1 {
+  text-align: center;
+  margin-bottom: 50px;
+  color: #2B3990;
+  padding: 50px;
+  font-size: 80px;
+  text-align: center;
+  font-weight: bold;
+}
+
+/* about-wrapper4*/
+.about-wrapper4 {
+  background-image: url("/dist/img/White_Values_2.jpg");
+  min-height: 100%;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(315px, 1fr))[auto-fill];
+      grid-template-columns: repeat(auto-fill, minmax(315px, 1fr));
+  grid-gap: 20px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  justify-items: center;
+}
+
+.about-wrapper4 .box2 {
+  color: #2B3990;
+  padding: 30px;
+  font-size: 1vw;
+  text-align: center;
+  font-weight: 900;
+  font-size: 25px;
+}
+
+.about-wrapper4 .box2 img {
+  width: 200px;
+  height: 200px;
+}
+
+.about-wrapper4 .box2 p {
+  text-align: center;
+}
+
+@media screen and (max-width: 1024px) {
+  .about-wrapper3 h1 {
+    font-size: 40px;
   }
 }
 
@@ -1469,3 +1553,4 @@ body {
 .container p {
   margin: 1rem 0;
 }
+/*# sourceMappingURL=index.css.map */
