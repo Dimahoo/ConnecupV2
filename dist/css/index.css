@@ -1786,6 +1786,169 @@
   }
 }
 
+/* security-wrapper4*/
+.security-wrapper4 {
+  margin-top: 4%;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(315px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(315px, 1fr));
+  justify-items: center;
+}
+
+.security-wrapper4 .para1 ul {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.security-wrapper4 .para1 ul li {
+  list-style: none;
+  padding: 7px 0px;
+  margin-left: 5%;
+}
+
+.security-wrapper4 .para1 ul li span {
+  margin-left: 1em;
+}
+
+.security-wrapper4 .para1 ul li:before {
+  content: '';
+  display: inline-block;
+  height: 20px;
+  width: 20px;
+  background-image: url("../icon/Blue_Check_Mark.png");
+  background-size: cover;
+  background-position: center;
+}
+
+.security-wrapper4 .para2 ul {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.security-wrapper4 .para2 ul li {
+  list-style: none;
+  padding: 7px 0px;
+  margin-left: 5%;
+}
+
+.security-wrapper4 .para2 ul li span {
+  margin-left: 1em;
+}
+
+.security-wrapper4 .para2 ul li:before {
+  content: '';
+  display: inline-block;
+  height: 20px;
+  width: 20px;
+  background-image: url("../icon/Blue_Check_Mark.png");
+  background-size: cover;
+  background-position: center;
+}
+
+@media screen and (max-width: 767px) {
+  .security-wrapper4 .para1 ul li {
+    font-size: 15px;
+    margin-left: 55px;
+    margin-right: 55px;
+  }
+  .security-wrapper4 .para2 ul li {
+    font-size: 15px;
+    margin-left: 55px;
+    margin-right: 55px;
+  }
+}
+
+/* security-wrapper5*/
+.security-wrapper5 {
+  min-height: 100%;
+  background-color: #2B3990;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(315px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(315px, 1fr));
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  justify-items: center;
+}
+
+.security-wrapper5 .para1 h1 {
+  margin-top: 70px;
+  text-align: left;
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 30px;
+  text-transform: uppercase;
+  padding-bottom: 5%;
+  margin-left: 20%;
+  margin-right: 20%;
+}
+
+.security-wrapper5 .para1 hr {
+  align: center;
+}
+
+.security-wrapper5 .para1 .mission {
+  text-align: left;
+  padding-top: 5%;
+  color: #ffffff;
+  font-size: 20px;
+  margin-left: 20%;
+  margin-right: 20%;
+}
+
+.security-wrapper5 .para1 p {
+  padding-top: 5%;
+  text-align: center;
+  color: #ffffff;
+  font-size: 20px;
+  margin-bottom: 5%;
+}
+
+.security-wrapper5 .para2 .target {
+  width: 350px;
+  height: 400px;
+}
+
+@media screen and (max-width: 1024px) {
+  .security-wrapper5 .para2 .target {
+    margin-top: 20%;
+    width: 350px;
+    height: 400px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .security-wrapper5 .para2 .target {
+    margin-top: 20%;
+    width: 300px;
+    height: 350px;
+    margin-bottom: 10%;
+  }
+  .security-wrapper5 .para1 h1 {
+    font-size: 20px;
+  }
+  .security-wrapper5 .para1 .mission {
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .security-wrapper5 .para2 .target {
+    width: 250px;
+    height: 300px;
+  }
+}
+
 @media screen and (max-width: 649px) {
   .main-header .menu-icon {
     display: block;
