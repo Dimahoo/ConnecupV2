@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+@import 'footer';
+@import 'card';
+@import 'wrapper';
+@import 'header';
+@import 'media';
+@import 'animations';
+@import 'neolight';
+@import 'consentpopup';
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  overflow-x: hidden;
+}
+
+.container {
+  width: 80%;
+  margin: 2rem auto;
+
+  p {
+    margin: 1rem 0;
+  }
+}
