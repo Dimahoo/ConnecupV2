@@ -844,6 +844,22 @@
   margin-right: 20%;
 }
 
+.manage-wrapper2 .para1 .neo-button > a {
+  position: relative;
+  display: inline;
+  text-align: center;
+  padding: 15px 30px;
+  color: #2B3990;
+  background-color: #d7ede3;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  text-decoration: none;
+  font-size: 20px;
+  overflow: hidden;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
 .manage-wrapper2 .image {
   background-color: #d7ede3;
 }
@@ -893,6 +909,15 @@
     overflow: hidden;
     -webkit-transition: 0.2s;
     transition: 0.2s;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .manage-wrapper2 .image .serv {
+    top: 30%;
+    width: 300px;
+    height: 200px;
+    margin-left: 5%;
   }
 }
 
@@ -961,8 +986,8 @@
   background-attachment: fixed;
   display: -ms-grid;
   display: grid;
-  -ms-grid-rows: ()[auto-fill];
-      grid-template-rows: repeat(auto-fill);
+  -ms-grid-columns: (minmax(315px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(315px, 1fr));
 }
 
 .manage-wrapper3 .para1 h1 {
@@ -1003,23 +1028,12 @@
 }
 
 @media screen and (max-width: 767px) {
-  .manage-wrapper3 {
-    min-height: 100%;
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-rows: 550px;
-        grid-template-rows: 550px;
-  }
   .manage-wrapper3 .para1 h1 {
     margin-top: 70px;
     text-align: center;
     color: #2B3990;
     font-weight: bold;
-    font-size: 30px;
+    font-size: 25px;
     margin-left: 20%;
     margin-right: 20%;
     margin-bottom: 3%;
@@ -1036,6 +1050,231 @@
     color: #000000;
     font-size: 15px;
     margin-right: 20%;
+  }
+}
+
+/* manage-wrapper4*/
+.manage-wrapper4 {
+  background: #2B3990;
+  min-height: 100%;
+  background-position: center;
+  background-size: cover;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(315px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(315px, 1fr));
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  justify-items: center;
+}
+
+.manage-wrapper4 .para1 h1 {
+  margin-top: 70px;
+  text-align: left;
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 30px;
+  text-transform: uppercase;
+  padding-bottom: 5%;
+  margin-left: 20%;
+  margin-right: 10%;
+}
+
+.manage-wrapper4 .para1 hr {
+  align: center;
+}
+
+.manage-wrapper4 .para1 .mission {
+  text-align: left;
+  padding-top: 5%;
+  color: #ffffff;
+  font-size: 20px;
+  margin-left: 20%;
+  margin-right: 20%;
+}
+
+.manage-wrapper4 .para1 p {
+  padding-top: 5%;
+  text-align: center;
+  color: #ffffff;
+  font-size: 20px;
+  margin-bottom: 15%;
+}
+
+@media screen and (max-width: 1024px) {
+  .manage-wrapper4 .para2 .target {
+    margin-top: 20%;
+    width: 300px;
+    height: 250px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .manage-wrapper4 .para2 .target {
+    margin-top: 20%;
+    width: 200px;
+    height: 150px;
+  }
+  .manage-wrapper4 .para1 h1 {
+    font-size: 20px;
+  }
+  .manage-wrapper4 .para1 .mission {
+    font-size: 15px;
+  }
+}
+
+/* manage-wrapper5*/
+.manage-wrapper5 {
+  background: #ffffff;
+  min-height: 100%;
+  background-position: center;
+  background-size: cover;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(315px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(315px, 1fr));
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  justify-items: center;
+}
+
+.manage-wrapper5 .para1 h1 {
+  margin-top: 70px;
+  text-align: left;
+  color: #000000;
+  font-weight: bold;
+  font-size: 30px;
+  text-transform: uppercase;
+  padding-bottom: 5%;
+  margin-left: 20%;
+  margin-right: 20%;
+}
+
+.manage-wrapper5 .para1 hr {
+  align: center;
+}
+
+.manage-wrapper5 .para1 .mission {
+  text-align: left;
+  padding-top: 5%;
+  color: #000000;
+  font-size: 20px;
+  margin-left: 20%;
+  margin-right: 20%;
+}
+
+.manage-wrapper5 .para1 p {
+  padding-top: 5%;
+  text-align: center;
+  color: #000000;
+  font-size: 20px;
+  margin-bottom: 15%;
+}
+
+.manage-wrapper5 .para2 .target {
+  width: 200px;
+  height: 200px;
+}
+
+@media screen and (max-width: 1024px) {
+  .manage-wrapper5 .para2 .target {
+    margin-top: 20%;
+    width: 300px;
+    height: 250px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .manage-wrapper5 .para2 .target {
+    margin-top: 20%;
+    width: 150px;
+    height: 150px;
+    margin-bottom: 10%;
+  }
+  .manage-wrapper5 .para1 h1 {
+    font-size: 20px;
+  }
+  .manage-wrapper5 .para1 .mission {
+    font-size: 15px;
+  }
+}
+
+/* manage-wrapper6*/
+.manage-wrapper6 {
+  background: #2B3990;
+  min-height: 100%;
+  background-position: center;
+  background-size: cover;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(315px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(315px, 1fr));
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  justify-items: center;
+}
+
+.manage-wrapper6 .para1 h1 {
+  margin-top: 70px;
+  text-align: left;
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 30px;
+  text-transform: uppercase;
+  padding-bottom: 5%;
+  margin-left: 20%;
+  margin-right: 20%;
+}
+
+.manage-wrapper6 .para1 hr {
+  align: center;
+}
+
+.manage-wrapper6 .para1 .mission {
+  text-align: left;
+  padding-top: 5%;
+  color: #ffffff;
+  font-size: 20px;
+  margin-left: 20%;
+  margin-right: 20%;
+}
+
+.manage-wrapper6 .para1 p {
+  padding-top: 5%;
+  text-align: center;
+  color: #ffffff;
+  font-size: 20px;
+  margin-bottom: 15%;
+}
+
+.manage-wrapper6 .para2 .target {
+  width: 500px;
+  height: 500px;
+}
+
+@media screen and (max-width: 1024px) {
+  .manage-wrapper6 .para2 .target {
+    margin-top: 20%;
+    width: 300px;
+    height: 300px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .manage-wrapper6 .para2 .target {
+    margin-top: 20%;
+    width: 200px;
+    height: 200px;
+    margin-bottom: 10%;
+  }
+  .manage-wrapper6 .para1 h1 {
+    font-size: 20px;
+  }
+  .manage-wrapper6 .para1 .mission {
+    font-size: 15px;
   }
 }
 
