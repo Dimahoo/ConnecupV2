@@ -9,7 +9,7 @@
     background-repeat: no-repeat;
     background-attachment: fixed;
     display:grid;
-    grid-template-columns: repeat(auto-fit, minmax(315px, 1fr));
+    grid-template-columns: 1fr 1fr;
     align-items: center;
     justify-items: center;
 }
@@ -450,13 +450,14 @@
 
     .nested {
         display: grid;
-        grid-template-rows: 200px 200px;
+        grid-template-rows: 200px 200px 200px 150px ;
         grid-gap: 10px;
         align-items: center;
         justify-items: center;
         font-size: 1vw;
         text-align: center;
         font-size: 20px;
+        margin-bottom: 10%;
 
         h2{
             color: #2B3990;
@@ -465,10 +466,11 @@
             width: 200px;
             height: 200px;
         }
-        .qsn{
+        p{
             text-align: center;
             margin-left: 10%;
             margin-right: 10%;
+            margin-bottom: 10%;
         }
     }
 }

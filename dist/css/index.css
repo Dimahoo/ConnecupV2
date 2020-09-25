@@ -520,8 +520,8 @@
   background-attachment: fixed;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (minmax(315px, 1fr))[auto-fit];
-      grid-template-columns: repeat(auto-fit, minmax(315px, 1fr));
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -985,8 +985,8 @@
 .service-wrapper3 .nested {
   display: -ms-grid;
   display: grid;
-  -ms-grid-rows: 200px 200px;
-      grid-template-rows: 200px 200px;
+  -ms-grid-rows: 200px 200px 200px 150px;
+      grid-template-rows: 200px 200px 200px 150px;
   grid-gap: 10px;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -995,6 +995,7 @@
   font-size: 1vw;
   text-align: center;
   font-size: 20px;
+  margin-bottom: 10%;
 }
 
 .service-wrapper3 .nested h2 {
@@ -1006,10 +1007,11 @@
   height: 200px;
 }
 
-.service-wrapper3 .nested .qsn {
+.service-wrapper3 .nested p {
   text-align: center;
   margin-left: 10%;
   margin-right: 10%;
+  margin-bottom: 10%;
 }
 
 @media screen and (max-width: 1024px) {
