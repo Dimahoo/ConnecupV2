@@ -1717,8 +1717,8 @@
   display: grid;
   -ms-grid-columns: 10% 40% 50%;
       grid-template-columns: 10% 40% 50%;
-  -ms-grid-rows: 500px;
-      grid-template-rows: 500px;
+  -ms-grid-rows: 550px;
+      grid-template-rows: 550px;
 }
 
 .pro-wrapper2 .marge {
@@ -1858,8 +1858,8 @@
     display: grid;
     -ms-grid-columns: 100%;
         grid-template-columns: 100%;
-    -ms-grid-rows: 450px;
-        grid-template-rows: 450px;
+    -ms-grid-rows: 550px;
+        grid-template-rows: 550px;
   }
   .pro-wrapper2 .marge {
     display: none;
@@ -1875,7 +1875,7 @@
     text-align: left;
     color: #2B3990;
     font-weight: bold;
-    font-size: 20px;
+    font-size: 30px;
     margin-left: 10%;
   }
   .pro-wrapper2 .para1 hr {
@@ -1900,6 +1900,439 @@
     color: #ffffff;
     font-size: 20px;
     margin-right: 20%;
+  }
+}
+
+/* pro-wrapper3*/
+.pro-wrapper3 {
+  min-height: 100%;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(315px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(315px, 1fr));
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  justify-items: center;
+  margin-bottom: 5%;
+}
+
+.pro-wrapper3 .para1 h1 {
+  margin-top: 70px;
+  text-align: center;
+  color: #2B3990;
+  font-weight: bold;
+  font-size: 50px;
+  margin-left: 20%;
+  margin-right: 20%;
+  margin-bottom: 3%;
+}
+
+.pro-wrapper3 .para1 hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 3px solid #fffb02;
+  margin: 1em 0;
+  padding: 0;
+  margin-left: 20%;
+  margin-right: 20%;
+}
+
+.pro-wrapper3 .para1 .app {
+  text-align: center;
+  color: #000000;
+  font-size: 20px;
+  margin-left: 20%;
+  margin-right: 20%;
+}
+
+.pro-wrapper3 .para1 p {
+  text-align: center;
+  color: #000000;
+  font-size: 20px;
+  margin-right: 20%;
+}
+
+@media screen and (max-width: 800px) {
+  .pro-wrapper3 .para1 h1 {
+    font-size: 40px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .pro-wrapper3 .para1 h1 {
+    font-size: 25px;
+  }
+  .pro-wrapper3 .para1 .app {
+    font-size: 15px;
+  }
+}
+
+/* wifi-wrapper1*/
+.wifi-wrapper1 {
+  background: #2B3990;
+  height: 70px;
+}
+
+/* wifi-wrapper2*/
+.wifi-wrapper2 {
+  min-height: 100%;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 10% 40% 50%;
+      grid-template-columns: 10% 40% 50%;
+  -ms-grid-rows: 550px;
+      grid-template-rows: 550px;
+}
+
+.wifi-wrapper2 .marge {
+  background-color: #d9f0ea;
+}
+
+.wifi-wrapper2 .para1 {
+  background-color: #ddd;
+}
+
+.wifi-wrapper2 .para1 h1 {
+  margin-top: 50px;
+  text-align: left;
+  color: #2B3990;
+  font-weight: bold;
+  font-size: 50px;
+  margin-left: 20%;
+}
+
+.wifi-wrapper2 .para1 hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 3px solid #fffb02;
+  margin: 1em 0;
+  padding: 0;
+  margin-left: 20%;
+  margin-right: 20%;
+}
+
+.wifi-wrapper2 .para1 .qsn {
+  text-align: left;
+  color: #000000;
+  font-size: 20px;
+  margin-left: 20%;
+  margin-right: 20%;
+}
+
+.wifi-wrapper2 .para1 p {
+  text-align: center;
+  color: #ffffff;
+  font-size: 20px;
+  margin-right: 20%;
+}
+
+.wifi-wrapper2 .para1 .neo-button > a {
+  position: relative;
+  display: inline;
+  text-align: center;
+  padding: 15px 30px;
+  color: #2B3990;
+  background-color: #d7ede3;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  text-decoration: none;
+  font-size: 20px;
+  overflow: hidden;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.wifi-wrapper2 .image {
+  background-color: #d7ede3;
+}
+
+.wifi-wrapper2 .image .serv {
+  background-color: #2B3990;
+  position: relative;
+  top: 10%;
+  width: 500px;
+  height: 400px;
+  margin-left: 25%;
+}
+
+.wifi-wrapper2 .neo-button {
+  margin: 0;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+@media screen and (max-width: 1024px) {
+  .wifi-wrapper2 {
+    -ms-grid-rows: 700px;
+        grid-template-rows: 700px;
+  }
+  .wifi-wrapper2 .image .serv {
+    top: 30%;
+    width: 300px;
+    height: 200px;
+    margin-left: 15%;
+  }
+  .wifi-wrapper2 .para1 h1 {
+    font-size: 40px;
+  }
+  .wifi-wrapper2 .para1 .neo-button > a {
+    position: relative;
+    display: inline;
+    text-align: center;
+    padding: 15px 30px;
+    color: #2B3990;
+    background-color: #d7ede3;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    text-decoration: none;
+    font-size: 15px;
+    overflow: hidden;
+    -webkit-transition: 0.2s;
+    transition: 0.2s;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .wifi-wrapper2 .para1 h1 {
+    font-size: 30px;
+  }
+  .wifi-wrapper2 .image .serv {
+    top: 30%;
+    width: 300px;
+    height: 200px;
+    margin-left: 5%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .wifi-wrapper2 {
+    min-height: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 100%;
+        grid-template-columns: 100%;
+    -ms-grid-rows: 550px;
+        grid-template-rows: 550px;
+  }
+  .wifi-wrapper2 .marge {
+    display: none;
+  }
+  .wifi-wrapper2 .image {
+    display: none;
+  }
+  .wifi-wrapper2 .para1 {
+    background-color: #ddd;
+  }
+  .wifi-wrapper2 .para1 h1 {
+    margin-top: 50px;
+    text-align: left;
+    color: #2B3990;
+    font-weight: bold;
+    font-size: 30px;
+    margin-left: 10%;
+  }
+  .wifi-wrapper2 .para1 hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 3px solid #fffb02;
+    margin: 1em 0;
+    padding: 0;
+    margin-left: 10%;
+    margin-right: 20%;
+  }
+  .wifi-wrapper2 .para1 .qsn {
+    text-align: left;
+    color: #000000;
+    font-size: 20px;
+    margin-left: 10%;
+    margin-right: 20%;
+  }
+  .wifi-wrapper2 .para1 p {
+    text-align: center;
+    color: #ffffff;
+    font-size: 20px;
+    margin-right: 20%;
+  }
+}
+
+/* wifi-wrapper3*/
+.wifi-wrapper3 {
+  min-height: 100%;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(315px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(315px, 1fr));
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 5%;
+}
+
+.wifi-wrapper3 .para1 h1 {
+  margin-top: 70px;
+  text-align: center;
+  color: #2B3990;
+  font-weight: bold;
+  font-size: 50px;
+  margin-left: 20%;
+  margin-right: 20%;
+  margin-bottom: 3%;
+}
+
+.wifi-wrapper3 .para1 hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 3px solid #fffb02;
+  margin: 1em 0;
+  padding: 0;
+  margin-left: 20%;
+  margin-right: 20%;
+}
+
+.wifi-wrapper3 .para1 .app {
+  text-align: center;
+  color: #000000;
+  font-size: 20px;
+  margin-left: 20%;
+  margin-right: 20%;
+}
+
+.wifi-wrapper3 .para1 p {
+  text-align: center;
+  color: #000000;
+  font-size: 20px;
+  margin-right: 20%;
+}
+
+@media screen and (max-width: 767px) {
+  .wifi-wrapper3 .para1 h1 {
+    margin-top: 70px;
+    text-align: center;
+    color: #2B3990;
+    font-weight: bold;
+    font-size: 25px;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-bottom: 3%;
+  }
+  .wifi-wrapper3 .para1 .app {
+    text-align: center;
+    color: #000000;
+    font-size: 15px;
+    margin-left: 20%;
+    margin-right: 20%;
+  }
+  .wifi-wrapper3 .para1 p {
+    text-align: center;
+    color: #000000;
+    font-size: 15px;
+    margin-right: 20%;
+  }
+}
+
+/* wifi-wrapper4*/
+.wifi-wrapper4 {
+  margin-top: 4%;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(315px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(315px, 1fr));
+  justify-items: center;
+}
+
+.wifi-wrapper4 .para1 ul {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.wifi-wrapper4 .para1 ul li {
+  list-style: none;
+  padding: 7px 0px;
+  margin-left: 5%;
+}
+
+.wifi-wrapper4 .para1 ul li span {
+  margin-left: 1em;
+}
+
+.wifi-wrapper4 .para1 ul li:before {
+  content: '';
+  display: inline-block;
+  height: 20px;
+  width: 20px;
+  background-image: url("../icon/Blue_Check_Mark.png");
+  background-size: cover;
+  background-position: center;
+}
+
+.wifi-wrapper4 .para2 ul {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.wifi-wrapper4 .para2 ul li {
+  list-style: none;
+  padding: 7px 0px;
+  margin-left: 5%;
+}
+
+.wifi-wrapper4 .para2 ul li span {
+  margin-left: 1em;
+}
+
+.wifi-wrapper4 .para2 ul li:before {
+  content: '';
+  display: inline-block;
+  height: 20px;
+  width: 20px;
+  background-image: url("../icon/Blue_Check_Mark.png");
+  background-size: cover;
+  background-position: center;
+}
+
+@media screen and (max-width: 767px) {
+  .wifi-wrapper4 .para1 ul li {
+    font-size: 15px;
+    margin-left: 55px;
+    margin-right: 55px;
+  }
+  .wifi-wrapper4 .para2 ul li {
+    font-size: 15px;
+    margin-left: 55px;
+    margin-right: 55px;
   }
 }
 
@@ -2810,4 +3243,3 @@ body {
 .container p {
   margin: 1rem 0;
 }
-/*# sourceMappingURL=service.css.map */

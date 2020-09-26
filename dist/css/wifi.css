@@ -2724,6 +2724,187 @@
   }
 }
 
+/*Neo Light Button*/
+.neo-button > a {
+  position: relative;
+  display: inline;
+  text-align: center;
+  padding: 15px 30px;
+  color: #2B3990;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  text-decoration: none;
+  font-size: 20px;
+  overflow: hidden;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.neo-button {
+  margin: 0;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.neo-button > a:hover {
+  color: white;
+  background: #2B3990;
+  /*box-shadow: 0 0 4px rgb(28, 10, 77), 0 0 34px rgb(28, 10, 77), 0 0 74px rgb(28, 10, 77);*/
+  -webkit-transition-delay: 0.25s;
+          transition-delay: 0.25s;
+}
+
+.neo-button > a span {
+  position: absolute;
+  display: block;
+}
+
+.neo-button > a span:nth-child(1) {
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 2px;
+  background: -webkit-gradient(linear, left top, right top, from(transparent), to(#2B3990));
+  background: linear-gradient(90deg, transparent, #2B3990);
+  -webkit-animation: animate1 1s linear infinite;
+          animation: animate1 1s linear infinite;
+}
+
+@-webkit-keyframes animate1 {
+  0% {
+    left: -100%;
+  }
+  50%, 100% {
+    left: 100%;
+  }
+}
+
+@keyframes animate1 {
+  0% {
+    left: -100%;
+  }
+  50%, 100% {
+    left: 100%;
+  }
+}
+
+.neo-button > a span:nth-child(2) {
+  top: -100%;
+  right: 0;
+  width: 2px;
+  height: 100%;
+  background: -webkit-gradient(linear, left top, left bottom, from(transparent), to(#2B3990));
+  background: linear-gradient(180deg, transparent, #2B3990);
+  -webkit-animation: animate2 1s linear infinite;
+          animation: animate2 1s linear infinite;
+  -webkit-animation-delay: 0.25s;
+          animation-delay: 0.25s;
+}
+
+@-webkit-keyframes animate2 {
+  0% {
+    top: -100%;
+  }
+  50%, 100% {
+    top: 100%;
+  }
+}
+
+@keyframes animate2 {
+  0% {
+    top: -100%;
+  }
+  50%, 100% {
+    top: 100%;
+  }
+}
+
+.neo-button > a span:nth-child(3) {
+  bottom: 0;
+  right: -100%;
+  width: 100%;
+  height: 2px;
+  background: -webkit-gradient(linear, right top, left top, from(transparent), to(#2B3990));
+  background: linear-gradient(270deg, transparent, #2B3990);
+  -webkit-animation: animate3 1s linear infinite;
+          animation: animate3 1s linear infinite;
+  -webkit-animation-delay: 0.5s;
+          animation-delay: 0.5s;
+}
+
+@-webkit-keyframes animate3 {
+  0% {
+    right: -100%;
+  }
+  50%, 100% {
+    right: 100%;
+  }
+}
+
+@keyframes animate3 {
+  0% {
+    right: -100%;
+  }
+  50%, 100% {
+    right: 100%;
+  }
+}
+
+.neo-button > a span:nth-child(4) {
+  bottom: -100%;
+  left: 0;
+  width: 2px;
+  height: 100%;
+  background: -webkit-gradient(linear, left bottom, left top, from(transparent), to(#2B3990));
+  background: linear-gradient(360deg, transparent, #2B3990);
+  -webkit-animation: animate4 1s linear infinite;
+          animation: animate4 1s linear infinite;
+  -webkit-animation-delay: 0.75s;
+          animation-delay: 0.75s;
+}
+
+@-webkit-keyframes animate4 {
+  0% {
+    bottom: -100%;
+  }
+  50%, 100% {
+    bottom: 100%;
+  }
+}
+
+@keyframes animate4 {
+  0% {
+    bottom: -100%;
+  }
+  50%, 100% {
+    bottom: 100%;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .neo-button > a {
+    position: relative;
+    display: inline;
+    text-align: center;
+    padding: 15px 30px;
+    color: #2B3990;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    text-decoration: none;
+    font-size: 10px;
+    font-weight: bold;
+    overflow: hidden;
+    -webkit-transition: 0.2s;
+    transition: 0.2s;
+  }
+}
+
+/*End Neo Light Button*/
 @-webkit-keyframes pulse {
   from {
     -webkit-box-shadow: 0 0 0 0px rgba(255, 255, 255, 0.6);
@@ -2736,7 +2917,6 @@
     background: rgba(255, 255, 255, 0);
   }
 }
-
 @keyframes pulse {
   from {
     -webkit-box-shadow: 0 0 0 0px rgba(255, 255, 255, 0.6);
@@ -2911,134 +3091,6 @@
   100% {
     -webkit-transform: translateY(0px) rotate(90deg);
             transform: translateY(0px) rotate(90deg);
-  }
-}
-
-#consent-popup {
-  position: fixed;
-  text-align: center;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  padding: 2rem;
-  background-color: white;
-  opacity: 1;
-  -webkit-transition: opacity .8s ease;
-  transition: opacity .8s ease;
-}
-
-#consent-popup.hidden {
-  opacity: 0;
-}
-
-#consent-popup p {
-  font-size: 20px;
-  font-weight: bold;
-}
-
-#consent-popup a {
-  color: #4B8EE7;
-  text-decoration: none;
-}
-
-#consent-popup #modal-open {
-  background: none;
-  border: none;
-  font-weight: bold;
-  color: #4B8EE7;
-  cursor: pointer;
-}
-
-#consent-popup #accept {
-  background-color: #F1D600;
-  color: #000;
-  display: inline-block;
-  border-radius: 5px;
-  padding: 5px 20px;
-  cursor: pointer;
-  margin: 0 60px 0 100px;
-}
-
-#consent-popup #accept:hover {
-  background-color: #E0C91F;
-}
-
-#consent-popup-model {
-  display: none;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.5);
-  -webkit-animation-name: modalSlideUp;
-          animation-name: modalSlideUp;
-  -webkit-animation-duration: 1s;
-          animation-duration: 1s;
-}
-
-#modal-content {
-  background: #efefef;
-  margin: 200px auto;
-  width: 30%;
-  -webkit-box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.25);
-          box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.25);
-}
-
-#modal-header {
-  background: #2B3990;
-  color: #fff;
-  padding: 10px 30px;
-  text-align: left;
-  text-transform: uppercase;
-}
-
-#modal-header p {
-  padding: 30px 5px;
-  font-weight: bold;
-  font-size: 20px;
-}
-
-#modal-header .close-modal {
-  font-size: 50px;
-  float: right;
-}
-
-#modal-header .close-modal:hover {
-  color: #333;
-  cursor: pointer;
-}
-
-#modal-body {
-  margin-top: 10px;
-  padding: 10px 40px;
-}
-
-#modal-body p {
-  text-align: left;
-  font-weight: bold;
-  font-size: 20px;
-}
-
-@-webkit-keyframes modalSlideUp {
-  0% {
-    -webkit-transform: translateY(1500px);
-            transform: translateY(1500px);
-  }
-  100% {
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
-  }
-}
-
-@keyframes modalSlideUp {
-  0% {
-    -webkit-transform: translateY(1500px);
-            transform: translateY(1500px);
-  }
-  100% {
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
   }
 }
 
