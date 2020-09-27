@@ -305,15 +305,15 @@
 
 @media screen and (max-width: 1024px) {
   .index-wrapper1 {
-    -ms-grid-rows: 800px;
-        grid-template-rows: 800px;
+    -ms-grid-rows: 900px;
+        grid-template-rows: 900px;
   }
 }
 
 @media screen and (max-width: 800px) {
   .index-wrapper1 {
-    -ms-grid-rows: 500px;
-        grid-template-rows: 500px;
+    -ms-grid-rows: 600px;
+        grid-template-rows: 600px;
   }
   .index-wrapper1 .para1 h1 {
     font-size: 30px;
