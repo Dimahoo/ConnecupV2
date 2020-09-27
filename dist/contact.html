@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/contact.css">
+  <link rel="stylesheet" href="css/aos.css" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <script src="js/jquery/3.3.1/jquery.slim.min.js" crossorigin="anonymous"></script>
+  <script src="js/bootstrap/3.3.0/bootstrap.min.js" crossorigin="anonymous"></script>
+  <script src="js/popper.min.js" crossorigin="anonymous"></script>
+  <script src="js/aos.js" crossorigin="anonymous"></script>
+  <script src="js/email.js" crossorigin="anonymous"></script>
+  <title>Contact</title>
+</head>
+
+<body>
+  <header class="main-header" id="main-header">
+    <div class="logo">
+      <a href="index.html"><img src="/dist/img/Logo_white_4.png"></a>
+    </div>
+
+    <input type="checkbox" class="menu-btn" id="menu-btn">
+    <label for="menu-btn" class="menu-icon">
+      <span class="menu-icon__line"></span>
+    </label>
+
+    <ul class="nav-links">
+      <li class="nav-link"><a href="about.html">À propos de nous</a></li>
+      <input type="checkbox" id="service"/>
+      <li class="nav-link"><a href="#"><img src="/dist/icon/arrow_down.png" class="arrow" /><label for="service">Nos solutions <i id="arr_down" class="fa fa-caret-down"></i></label></a>
+        <ul class="collabse-nav-link">
+          <li><a class="sub" href="manage.html">Services TI gérés</a></li>
+          <li><a class="sub" href="security.html">Cybersécurité</a></li>
+          <li><a class="sub" href="professional.html">Services professionels</a></li>
+          <li><a class="sub" href="wifi.html">Solutions WIFI</a></li>
+        </ul>
+      </li>
+      <li class="nav-link"><a href="#">Contactez-nous</a></li>
+    </ul>
+  </header>
+
+  <section class="map">
+    <br>
+    <br>
+    <br>
+    <br>
+    <iframe width="100%" height="480" frameborder="0" style="border:0"
+      src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJraT92e4ZyUwRczFTdMchDEs&key=AIzaSyBf1_ym1IcvwP15IROHGPVmzq2cEYOlLhE"
+      allowfullscreen></iframe>
+  </section>
+
+  <div class="contact-wrapper1">
+    <div class="para1">
+      <h1 data-aos="fade-right"><i class="fa fa-map-marker"></i> Adresse</h1>
+      <hr data-aos="fade-up" class="line">
+      <p data-aos="fade-in">
+        3734 Chemin de la Cote-Sainte-Catherine, Montreal, H3T1E1. QC.
+      </p>
+    </div>
+    <div class="para2">
+      <h1 data-aos="fade-right"><i class="fa fa-phone"></i> Contact</h1>
+      <hr data-aos="fade-up" class="line">
+      <p data-aos="fade-in">
+        sales@connecup.com <br />
+        1-514-443-1688
+      </p>
+    </div>
+    <div class="para3">
+      <h1 data-aos="fade-right"><i class="fa fa-calendar"></i> Horaire de travail</h1>
+      <hr data-aos="fade-up" class="line">
+      <p data-aos="fade-in">
+        Lundi – Vendredi <br />
+        9:00 AM – 5:00 PM
+      </p>
+    </div>
+  </div>
+
+  <section class="contact-wrapper2" id="contact-wrapper2">
+
+    <div class="container-fluid">
+      <div class="container">
+        <div class="formBox">
+
+
+          <form action="https://formspree.io/info@connecup.com" method="POST">
+            <div class="form-row">
+              <div class="form-group col-sm-12">
+                <h1 data-aos="flip-up">Prenez contact avec nous</h1>
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div data-aos="fade-right" class="form-group col-sm-6">
+                <label for="inputFName">Nom</label>
+                <input type="text" name="lastName" class="lastName form-control">
+              </div>
+              <div data-aos="fade-right" class="form-group col-sm-6">
+                <label for="inputLName">Prénom</label>
+                <input type="text" name="firstName" class="firstName form-control">
+              </div>
+            </div>
+            <div class="form-row">
+              <div data-aos="fade-right" class="form-group col-sm-6">
+                <label for="inputEmail">Email</label>
+                <input type="text" name="email" class="email form-control">
+              </div>
+              <div data-aos="fade-right" class="form-group col-sm-6">
+                <label for="inputMobile">Téléphone</label>
+                <input type="text" name="phone" class="phone form-control">
+              </div>
+            </div>
+            <div class="form-row">
+              <div data-aos="flip-down" class="form-group col-sm-12">
+                <label for="Message">Message</label>
+                <textarea id="message" name="message " class="message form-control" rows="3"></textarea>
+              </div>
+            </div>
+            <div class="status">
+
+            </div>
+            <div class="form-row">
+              <div data-aos="zoom-in" class="form-group col-sm-12">
+                <button type="submit" class="submit btn btn-primary btn-block">Envoyer message</button>
+              </div>
+            </div>
+          </form>
+
+
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+
+  <footer class="footer-bs">
+    <div class="row">
+      <div class="col-md-5 footer-brand animated fadeInLeft">
+        <h2>Connecup</h2>
+        <p>Nous comprenons vos exigences techniques et commerciales et concevons des solutions
+          adaptées à vos besoins. Elles comprennent l'évaluation du réseau,
+          les études, les installations sur site, les tests, l'assistance 24/7, la résolution des problèmes et plus
+          encore ...
+          pour tous les déploiements et intégrations globales.</p>
+        <p>© 2020 Connecup Inc. Tous les droits sont résérvés</p>
+        <p>Conditions d'utilisation Politique privée</p>
+      </div>
+      <div class="col-md-4 footer-nav animated fadeInUp">
+        <h4>Menu</h4>
+        <div class="col-md-6">
+          <ul class="pages">
+            <li><a href="about.html">À propos de nous</a></li>
+            <li><a href="service.html">Nos solutions</a></li>
+            <li><a href="#">Contactez-nous</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-md-2 footer-social animated fadeInDown">
+        <h4>Suivez-nous</h4>
+        <ul>
+          <li><a href="https://fb.me/connecup.inc" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+          <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+          <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+        </ul>
+      </div>
+
+    </div>
+  </footer>
+
+  <script src="js/modal.js"></script>
+  <script src="js/app.js"></script>
+  <script src="js/contact.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</body>
+
+</html>

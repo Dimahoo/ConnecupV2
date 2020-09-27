@@ -2336,6 +2336,140 @@
   }
 }
 
+/* contact-wrapper1*/
+.contact-wrapper1 {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(315px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(315px, 1fr));
+}
+
+.contact-wrapper1 .para1 {
+  color: black;
+}
+
+.contact-wrapper1 .para1 p {
+  margin-top: 20px;
+}
+
+.contact-wrapper1 .para1 h1 {
+  font-size: 25px;
+}
+
+.contact-wrapper1 .para2 {
+  color: white;
+}
+
+.contact-wrapper1 .para2 p {
+  margin-top: 20px;
+}
+
+.contact-wrapper1 .para2 h1 {
+  font-size: 25px;
+}
+
+.contact-wrapper1 .para3 {
+  color: black;
+}
+
+.contact-wrapper1 .para3 p {
+  margin-top: 20px;
+}
+
+.contact-wrapper1 .para3 h1 {
+  font-size: 25px;
+}
+
+.contact-wrapper1 h1 {
+  font-weight: bold;
+}
+
+.contact-wrapper1 > div {
+  background: #2B3990;
+  padding: 2em;
+}
+
+.contact-wrapper1 > div:nth-child(odd) {
+  background: #ddd;
+}
+
+.contact-wrapper1 .line {
+  border: 2px solid #fffb02;
+  max-width: 20%;
+  align: left;
+  width: 50%;
+}
+
+@media screen and (max-width: 800px) {
+  .contact-wrapper1 {
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .contact-wrapper1 {
+    -ms-grid-columns: (minmax(315px, 1fr))[auto-fit];
+        grid-template-columns: repeat(auto-fit, minmax(315px, 1fr));
+  }
+}
+
+/* contact-wrapper2*/
+.contact-wrapper2 {
+  position: center;
+  height: 600px;
+}
+
+.contact-wrapper2 .formBox {
+  padding: 50px;
+}
+
+.contact-wrapper2 h1 {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  margin-bottom: 50px !important;
+  text-transform: uppercase;
+  font-size: 48px;
+}
+
+.contact-wrapper2 #message {
+  resize: none;
+}
+
+@media only screen and (max-width: 1024px) {
+  .contact-wrapper2 {
+    height: 700px;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .contact-wrapper2 {
+    height: 700px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .contact-wrapper2 {
+    height: 900px;
+  }
+  .contact-wrapper2 h1 {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    margin-bottom: 40px !important;
+    text-transform: uppercase;
+    font-size: 20px;
+  }
+  .contact-wrapper2 #message {
+    width: 200px;
+  }
+}
+
+.contact-wrapper2 .btn {
+  margin-top: 30px;
+}
+
 .main-header {
   position: fixed;
   display: -webkit-box;
@@ -3243,3 +3377,4 @@ body {
 .container p {
   margin: 1rem 0;
 }
+/*# sourceMappingURL=security.css.map */

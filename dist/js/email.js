@@ -13,39 +13,31 @@ $(document).ready(function () {
         var statusElm = $('.status')
         statusElm.empty()
 
-        if (email.length < 5 && !email.includes('@') && !email.includes('.')) {
+        if (lastName.length < 2) {
             event.preventDefault()
-            document.getElementById('msg').style.height = "610px"
-            statusElm.append('<div id="alert" data-aos="fade-left">Email non valide</div>')
+            statusElm.append('<div id="alert" data-aos="fade-left">Merci de saisir un nom valide</div>')
         } else {
-
             if (firstName.length < 2) {
                 event.preventDefault()
-                document.getElementById('msg').style.height = "610px"
-                statusElm.append('<div id="alert" data-aos="fade-left">Prénom non valide</div>')
+                statusElm.append('<div id="alert" data-aos="fade-left">Merci de saisir un prénom valide</div>')
             } else {
-
-                if (lastName.length < 2) {
+                if (email.length < 5 && !email.includes('@') && !email.includes('.')) {
                     event.preventDefault()
-                    document.getElementById('msg').style.height = "610px"
-                    statusElm.append('<div id="alert" data-aos="fade-left">Nom nom valide</div>')
+                    statusElm.append('<div id="alert" data-aos="fade-left">Merci de saisir un email valide</div>')
                 } else {
-
                     if (phone.length < 2) {
                         event.preventDefault()
-                        document.getElementById('msg').style.height = "610px"
-                        statusElm.append('<div id="alert" data-aos="fade-left">Numéro de téléphone non valide</div>')
+                        statusElm.append('<div id="alert" data-aos="fade-left">Merci de saisir un numéro de téléphone valide</div>')
                     } else {
-
                         if (message.length < 20) {
                             event.preventDefault()
-                            document.getElementById('msg').style.height = "610px"
-                            statusElm.append('<div id="alert" data-aos="fade-left">Message doit comporter plus de 20 caractères</div>')
+                            statusElm.append('<div id="alert" data-aos="fade-left">Votre message doit comporter plus de 20 caractères</div>')
                         }
                     }
                 }
             }
         }
+
 
         document.getElementById('alert').style.color = 'red'
 

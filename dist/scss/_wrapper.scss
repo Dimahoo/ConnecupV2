@@ -2025,3 +2025,131 @@
         margin-right: 55px;
     }
 }
+
+/* contact-wrapper1*/
+.contact-wrapper1{
+    display:grid;
+    grid-template-columns: repeat(auto-fit, minmax(315px, 1fr));
+}
+
+
+.contact-wrapper1 .para1{
+    color: rgb(0, 0, 0); 
+    p{
+        margin-top: 20px;
+    }
+    h1{
+        font-size: 25px;
+    }
+    
+}
+.contact-wrapper1 .para2{
+    color: white;
+    p{
+        margin-top: 20px;
+    }
+    h1{
+        font-size: 25px;
+    } 
+}
+.contact-wrapper1 .para3{
+    color: rgb(0, 0, 0); 
+    p{
+        margin-top: 20px;
+    }
+    h1{
+        font-size: 25px;
+    }
+}
+.contact-wrapper1 h1{
+    font-weight: bold;
+}
+
+.contact-wrapper1 > div{
+    background:#2B3990;
+    padding:2em;
+}
+.contact-wrapper1 > div:nth-child(odd){
+    background:#ddd;
+}
+
+.contact-wrapper1 .line {
+    border: 2px solid rgb(255, 251, 2);
+    max-width: 20%;
+    align: left;
+    width: 50%;
+}
+
+@media screen and (max-width: 800px) {
+    .contact-wrapper1{
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .contact-wrapper1{
+        grid-template-columns: repeat(auto-fit, minmax(315px, 1fr));
+    }
+}
+
+/* contact-wrapper2*/
+
+.contact-wrapper2{
+    position: center;
+    height: 600px;
+}
+
+.contact-wrapper2 .formBox{
+	padding: 50px;
+}
+
+.contact-wrapper2 h1{
+	margin: 0;
+	padding: 0;
+	text-align: center;
+	margin-bottom: 50px !important;
+	text-transform: uppercase;
+    font-size: 48px;
+}
+
+.contact-wrapper2{
+    #message {
+        resize: none;
+    }
+}
+
+@media only screen and (max-width:1024px) {
+    .contact-wrapper2{
+        height: 700px;
+    }
+}
+
+@media only screen and (max-width:800px) {
+    .contact-wrapper2{
+        height: 700px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .contact-wrapper2{
+        height: 900px;
+    }
+    .contact-wrapper2 h1{
+        margin: 0;
+        padding: 0;
+        text-align: center;
+        margin-bottom: 40px !important;
+        text-transform: uppercase;
+        font-size: 20px;
+    }
+    .contact-wrapper2{
+        #message {
+            width: 200px;
+        }
+
+    }
+}
+
+.contact-wrapper2 .btn{
+    margin-top: 30px;
+}
